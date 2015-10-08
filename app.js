@@ -6,9 +6,12 @@ var usernames = [];
 
 server.listen(process.env.PORT || 3000);
 
+
 app.get("/", function(req, res) {
    res.sendFile(__dirname + "/index.html");
 });
+
+app.use(express.static(__dirname + "/public"));
 
 io.sockets.on("connection", function(socket) {
    socket.on("new user", function(data, callback) {
