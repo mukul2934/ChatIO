@@ -10,14 +10,35 @@
    <body>
       <div class="container-fluid well">
          <center class="centerScreen">
-            <div class="form-group">
+            <form class="form-horizontal" id="usernameForm">
                <div class="form-group">
-                  <input type="text" class="form-control" id="usernmame" placeholder="Enter username">
+                  <input type="text" class="form-control" placeholder="Enter username" id="username">
                </div>
                <button type="submit" class="btn btn-lg btn-success">Join</button>
-            </div>
+            </form>
          </center>
+
+         <div class="row" id="mainWrapper">
+            <div id="chatWrapper">
+               <div id="chatWindow" class="chatWindow">
+                  <center>
+
+                  </center>
+               </div>
+            </div>
+         </div>
       </div>
+
+
+         <div class="footer">
+           <center>
+             <form id="messageForm">
+              <input type="text" id="message">
+              <button type="submit" class="btn btn-success">Say it</button>
+            </form>
+           </center>
+         </div>
+
       <!-- <div class="container well" id="container">
          <div class="row">
             <div class="col-md-8" id="namesWrapper">
@@ -25,9 +46,11 @@
                <p>
                   Create Username:
                </p>
-               <form id="usernameForm">
-                  <input size="35" id="username">
-                  <input type="submit" value="Submit">
+               <form class="form-horizontal" id="usernameForm">
+                  <div class="form-group">
+                     <input type="text" class="form-control" placeholder="Enter username" id="username">
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-success">Join</button>
                </form>
             </div>
          </div>

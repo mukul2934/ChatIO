@@ -5,3 +5,32 @@
   margin-top: -50px;
   margin-left: -100px;
 }
+
+input {
+   height: 50px;
+   width: 700px;
+   margin-top: 10px;
+}
+
+.chatWindow {
+   width:75% auto;
+   height: 900px;
+   overflow: scroll;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #0A01A0A;
+}

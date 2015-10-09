@@ -7,12 +7,15 @@ $(function() {
    var $users = $("#users");
    var $username = $("#username");
    var $error = $("#error");
+   $("#mainWrapper").hide();
 
    $usernameForm.submit(function(e) {
+      console.log("Username submit: " + $username.val());
+
       e.preventDefault();
       socket.emit("new user", $username.val(), function(data) {
          if (data) {
-            $("#namesWrapper").hide();
+            $usernameForm.hide();
             $("#mainWrapper").show();
          } else {
             $error.html("Username is already taken.");
